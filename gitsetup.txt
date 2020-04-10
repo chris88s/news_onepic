@@ -1,0 +1,21 @@
+1.
+git config --global user.name "your name" 
+git config --global user.email "your@email.com"
+
+2.
+ssh-keygen -t rsa -C "your@email.com"
+
+3.
+在本地用户文件夹下生成.ssh的文件夹，里面包含id_rsa和id_rsa.pub两个文件，记事本打开id_rsa.pub，全选,复制，GitHub账号里去，点击设置，点击SSH，
+点击NEW SSHkey，粘贴
+
+4.
+回到git，输入
+
+ssh -T git@github.com
+
+5.
+在Git上输入这个，克隆仓库到本地
+
+git clone git@github.com:fenyukuang/TestCode.git
+
